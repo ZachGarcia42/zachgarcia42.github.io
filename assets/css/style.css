@@ -556,6 +556,7 @@ div.container {
   grid-template-areas: 'a b c d';
   column-gap: 5px;
   width: 100%;
+  justify-content: center;
 }
 
 div img {
@@ -564,12 +565,32 @@ div img {
   grid-area: a;
 }
 
-#schoolinfo {
+div img.logo {
+  max-width: 100%;
+  max-height: 50%;
+  grid-area: a;
+  float: right;
+  margin-left: auto;
+}
+
+#schoolinfo,
+#google,
+#tesla {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   font-size: 2vw;
 }
+
+#goog_date,
+#tesla_date {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-size: 2vw;
+}
+
+
 
 #paragraph {
   font-size: 20pt;
@@ -598,7 +619,6 @@ div.about {
   position: relative;
   text-align: center;
   margin-left: 25%;
-  /* margin-top: 50%; */
 }
 
 div.skills p,
