@@ -175,9 +175,15 @@ div img.logo {
   margin-left: auto;
 }
 
+#ratsvid {
+  float: right;
+}
+
 #schoolinfo,
 #google,
-#tesla {
+#tesla,
+#alpha,
+#rats {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
