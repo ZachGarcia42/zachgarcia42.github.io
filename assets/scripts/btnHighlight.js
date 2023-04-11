@@ -1,13 +1,3 @@
-var btns = document.querySelectorAll("#navlist > li > a")
-
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
 function highlightMenuItem() {
   // Get all menu items and corresponding sections
   const menuItems = document.querySelectorAll('.btn');
@@ -19,9 +9,8 @@ function highlightMenuItem() {
     const section = sections[i];
     const sectionTop = section.offsetTop;
     const sectionBottom = sectionTop + section.offsetHeight;
-    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+    if (window.pageYOffset >= (sectionTop - 10) && window.pageYOffset < sectionBottom) {
       currentSection = section;
-      break;
     }
   }
 
