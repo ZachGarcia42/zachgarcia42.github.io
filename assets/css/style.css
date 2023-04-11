@@ -205,21 +205,22 @@ div img.logo {
   margin-top: 2%;
 }
 
-div.proj ul,
-div.exp ul {
+div.info {
+  background-color: rgb(50, 50, 50);
+  padding: 15pt;
+  border-radius: 20pt;
+}
+
+div.section ul {
   display: inline-block;
 }
 
-div.proj li,
-div.exp li {
+div.section li {
   text-align: left;
   font-size: 20pt;
 }
 
-div.skills,
-div.proj,
-div.exp,
-div.about {
+div.section {
   width: 70%;
   height: max-content;
   min-height: 100vh;
@@ -229,10 +230,7 @@ div.about {
   margin-left: 25%;
 }
 
-div.skills p,
-div.proj p,
-div.exp p,
-div.about p {
+div.section p {
   font-size: 24pt;
 }
 

@@ -15,7 +15,7 @@
       <img id="headshot" src="../assets/files/Headshot.jpg">
     </li>
     <li>
-      <a class="btn active" href="#home">Home</a>
+      <a class="btn" href="#home">Home</a>
     </li>
     <li>
       <a class="btn" href="#about">About Me</a>
@@ -31,7 +31,7 @@
     </li>
   </ul>
 
-  <div class="content" id="home">
+  <div class="section" id="home">
     <h1 id="name">Zach Garcia</h1>
     <!-- <p>zachagarcia@gmail.com</p> -->
     <a id="email" target="_blank" rel="nofollow" href="mailto:zachagarcia@gmail.com">zachagarcia@gmail.com</a>
@@ -44,111 +44,118 @@
 
   </div>
 
-  <div class="about" id="about">
+  <div class="section" id="about" data-section="about">
     <h1>About Me</h1>
-    <div class="container">
-      <img src="../assets/files/cornell-logo.png">
-      <p id="schoolinfo">
-        Cornell University '25 <br>
-        Major: Computer Science <br>
-        Major: Electrical and Computer Engineering<br>
-        Minor: Robotics <br>
-        GPA: 4.10 <br>
+    <div class="info">
+      <div class="container">
+        <img src="../assets/files/cornell-logo.png">
+        <p id="schoolinfo">
+          Cornell University '25 <br>
+          Major: Computer Science <br>
+          Major: Electrical and Computer Engineering<br>
+          Minor: Robotics <br>
+          GPA: 4.10 <br>
+        </p>
+      </div>
+      <p id="paragraph">
+        Hello! I'm Zach Garcia, a CS and ECE double major at Cornell University
+        interning at Google this summer. At Cornell, I am a member of the Cornell
+        Rocketry Team, working on software for our ground station and LoRa
+        Communications with the rocket. I also work on flight software for Alpha
+        CubeSat in the Space Systems Design Studio, and I am the president of
+        Amateur Radio Club at Cornell, where we research Software Defined Radios.
+        <br>
+        <br>
+        I hope to work on impactful solutions to engineering problems concerning
+        space exploration, sustainability, and artificial intelligence.
       </p>
     </div>
-    <p id="paragraph">
-      Hello! I'm Zach Garcia, a CS and ECE double major at Cornell University
-      interning at Google this summer. At Cornell, I am a member of the Cornell
-      Rocketry Team, working on software for our ground station and LoRa
-      Communications with the rocket. I also work on flight software for Alpha
-      CubeSat in the Space Systems Design Studio, and I am the president of
-      Amateur Radio Club at Cornell, where we research Software Defined Radios.
-      <br>
-      <br>
-      I hope to work on impactful solutions to engineering problems concerning
-      space exploration, sustainability, and artificial intelligence.
-    </p>
   </div>
 
-  <div class="exp" id="exp">
-    <h1>Experience</h1>
+  <div class="section" id="exp" data-section="experience">
     <br>
-    <div class="container">
-      <img class="logo" src="../assets/files/google.png">
-      <p id="google">
-        Google Cloud Storage <b>Sunnyvale, CA</b> | SWE Intern
+    <div class="info">
+      <div class="container">
+        <img class="logo" src="../assets/files/google.png">
+        <p id="google">
+          Google Cloud Storage <b>Sunnyvale, CA</b> | SWE Intern
+        </p>
+        <p id="goog_date" class="date"> May 2022 - Aug. 2022</p>
+      </div>
+
+      <br>
+      <ul>
+        <li>Gained experience with Google's developer workflow and collaborating with version control</li>
+        <li>Improved development velocity and reliability by integrating code with an efficient C++ RPC framework</li>
+        <li>Upgraded a test to be hermetic and deterministic to reduce runtime by 60% and eliminate flakiness</li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <img class="logo" src="../assets/files/tesla.png">
+        <p id="tesla">
+          Tesla <b>Pittsburgh, PA</b> | Tesla Advisor
+        </p>
+        <p id="tesla_date" class="date"> May 2022 - Aug. 2022</p>
+      </div><br>
+      <ul>
+        <li>Educated clients about the benefits of electric vehicles to capture leads on the sales floor</li>
+        <li>Delivered 50+ vehicles and detailed 100+ vehicles</li>
+      </ul>
       </p>
-      <p id="goog_date" class="date"> May 2022 - Aug. 2022</p>
     </div>
-
-    <br>
-    <ul>
-      <li>Gained experience with Google's developer workflow and collaborating with version control</li>
-      <li>Improved development velocity and reliability by integrating code with an efficient C++ RPC framework</li>
-      <li>Upgraded a test to be hermetic and deterministic to reduce runtime by 60% and eliminate flakiness</li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-      <img class="logo" src="../assets/files/tesla.png">
-      <p id="tesla">
-        Tesla <b>Pittsburgh, PA</b> | Tesla Advisor
-      </p>
-      <p id="tesla_date" class="date"> May 2022 - Aug. 2022</p>
-    </div><br>
-    <ul>
-      <li>Educated clients about the benefits of electric vehicles to capture leads on the sales floor</li>
-      <li>Delivered 50+ vehicles and detailed 100+ vehicles</li>
-    </ul>
-    </p>
   </div>
 
-  <div class="proj" id="proj">
+  <div class="section" id="proj">
     <h1>Projects</h1>
     <br>
-    <div class="container">
-      <img class="logo" src="../assets/files/Alpha.png">
-      <p id="alpha">
-        Alpha CubeSat Flight Software
+    <div class="info">
+      <div class="container">
+        <img class="logo" src="../assets/files/Alpha.png">
+        <p id="alpha">
+          Alpha CubeSat Flight Software
+        </p>
+      </div>
+      <p>Space Systems Design Studio</p>
+      <ul>
+        <li>Wrote robust software for CubeSat operations in space</li>
+        <li>Tested and repaired IMU and Camera report managers after State Field Registry addition</li>
+        <li>Added the capability to invalidate erroneous button readings to improve deployment detection</li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <iframe id=ratsvid width="178" height="315" src="https://www.youtube.com/embed/Xi2OhtbPn3E"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <p id="rats">
+          Rotational Antenna Tracking System
+        </p>
+      </div>
+      <p>Cornell Rocketry Team<br>
+      <ul>
+        <li>Developed an algorithm to track the rocket with a directional antenna during flight</li>
+        <li>Implemented LoRa communications that received packets from 2 miles away</li>
+        <li>Added Reed-Solomon forward error correction to improve packet reception</li>
+      </ul>
       </p>
     </div>
-    <p>Space Systems Design Studio</p>
-    <ul>
-      <li>Wrote robust software for CubeSat operations in space</li>
-      <li>Tested and repaired IMU and Camera report managers after State Field Registry addition</li>
-      <li>Added the capability to invalidate erroneous button readings to improve deployment detection</li>
-    </ul>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-      <iframe id=ratsvid width="178" height="315" src="https://www.youtube.com/embed/Xi2OhtbPn3E"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-      <p id="rats">
-        Rotational Antenna Tracking System
-      </p>
-    </div>
-    <p>Cornell Rocketry Team<br>
-    <ul>
-      <li>Developed an algorithm to track the rocket with a directional antenna during flight</li>
-      <li>Implemented LoRa communications that received packets from 2 miles away</li>
-      <li>Added Reed-Solomon forward error correction to improve packet reception</li>
-    </ul>
-    </p>
   </div>
 
-  <div class="skills" id="skills">
+  <div class="section" id="skills">
     <h1>Skills</h1>
-    <p>
-      Coding: <br>
-      C++ | C | Java | Kotlin | Python | Arduino | OCaml | HTML | CSS <br>
-      <br>
-      Other Software: <br>
-      Altium | Visual Studio Code | Arduino IDE | LaTeX <br>
-    </p>
+    <div class="info">
+      <p>
+        Coding: <br>
+        C++ | C | Java | Kotlin | Python | Arduino | OCaml | HTML | CSS <br>
+        <br>
+        Other Software: <br>
+        Altium | Visual Studio Code | Arduino IDE | LaTeX <br>
+      </p>
+    </div>
   </div>
   <script src="../assets/scripts/btnHighlight.js"></script>
 
