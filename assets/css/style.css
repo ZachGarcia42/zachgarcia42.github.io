@@ -148,7 +148,7 @@ div.content {
 }
 
 div.content h1 {
-  margin-top: 20%;
+  margin-top: 30%;
 }
 
 div.container {
@@ -159,6 +159,20 @@ div.container {
   column-gap: 5px;
   width: 100%;
   justify-content: center;
+}
+
+div.icons a svg {
+  height: 50px;
+  width: 50px;
+  stroke: rgb(3, 210, 214);
+  fill: rgb(3, 210, 214);
+}
+
+div.info a svg {
+  height: 80px;
+  width: 80px;
+  stroke: white;
+  fill: white;
 }
 
 div img {
@@ -177,15 +191,22 @@ div img.logo {
 
 #ratsvid {
   float: right;
+  margin-left: auto;
 }
 
 #schoolinfo,
 #google,
 #tesla,
-#alpha,
-#rats {
+#alpha {
   grid-column-start: 2;
   grid-column-end: 4;
+  grid-row-start: 1;
+  font-size: 2vw;
+}
+
+#rats {
+  grid-column-start: 2;
+  grid-column-end: 5;
   grid-row-start: 1;
   font-size: 2vw;
 }
@@ -235,6 +256,23 @@ div.section p {
 }
 
 @media screen and (max-width: 900px) {
+  #rats_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 17% 33% 33% 17%;
+    grid-template-areas: 'a b c d';
+    column-gap: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #rats {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    font-size: 5vw;
+  }
+
   ul.sidenav {
     width: 100%;
     height: auto;
@@ -245,6 +283,10 @@ div.section p {
   ul.sidenav li a {
     float: left;
     padding: 15px;
+  }
+
+  div.section {
+    margin-left: 15%;
   }
 
   div h1 {
