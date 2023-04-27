@@ -191,7 +191,7 @@ div img.logo {
 }
 
 a:link {
-  color: rgb(1, 105, 117);
+  color: rgb(4, 128, 143);
 }
 
 a:visited {
@@ -214,19 +214,20 @@ a:active {
 #schoolinfo,
 #google,
 #tesla,
-#alpha {
+#alpha,
+#rats {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   font-size: 2vw;
 }
 
-#rats {
+/* #rats {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 1;
   font-size: 2vw;
-}
+} */
 
 #goog_date,
 #tesla_date {
