@@ -22,7 +22,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0;
-  color: rgb(3, 210, 214)
+  color: rgb(4, 128, 143)
 }
 
 h1 {
@@ -75,7 +75,7 @@ p {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
-  color: rgb(3, 210, 214);
+  color: rgb(4, 128, 143);
 }
 
 #linkedin {
@@ -83,7 +83,7 @@ p {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
-  color: rgb(3, 210, 214);
+  color: rgb(4, 128, 143);
 }
 
 #resume {
@@ -91,7 +91,7 @@ p {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 400;
-  color: rgb(3, 210, 214);
+  color: rgb(4, 128, 143);
 }
 
 small {
@@ -164,8 +164,8 @@ div.container {
 div.icons a svg {
   height: 50px;
   width: 50px;
-  stroke: rgb(3, 210, 214);
-  fill: rgb(3, 210, 214);
+  stroke: rgb(4, 128, 143);
+  fill: rgb(4, 128, 143);
 }
 
 div.info a svg {
@@ -183,10 +183,11 @@ div img {
 
 div img.logo {
   max-width: 100%;
-  max-height: 50%;
+  max-height: 100%;
   grid-area: a;
   float: right;
   margin-left: auto;
+  border-radius: 15px;
 }
 
 #ratsvid {
@@ -252,7 +253,7 @@ div.section {
 }
 
 div.section p {
-  font-size: 24pt;
+  font-size: 12pt;
 }
 
 @media screen and (max-width: 900px) {
@@ -266,12 +267,12 @@ div.section p {
     justify-content: center;
   }
 
-  #rats {
+  /* #rats {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     font-size: 5vw;
-  }
+  } */
 
   ul.sidenav {
     width: 100%;
