@@ -190,6 +190,22 @@ div img.logo {
   border-radius: 15px;
 }
 
+a:link {
+  color: rgb(1, 105, 117);
+}
+
+a:visited {
+  color: rgb(1, 105, 117);
+}
+
+a:hover {
+  color: rgb(1, 105, 117);
+}
+
+a:active {
+  color: rgb(1, 105, 117);
+}
+
 #ratsvid {
   float: right;
   margin-left: auto;
