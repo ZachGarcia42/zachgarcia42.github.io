@@ -206,6 +206,10 @@ a:active {
   color: rgb(1, 105, 117);
 }
 
+div.section p.org {
+  font-size: 18pt;
+}
+
 #ratsvid {
   float: right;
   margin-left: auto;
