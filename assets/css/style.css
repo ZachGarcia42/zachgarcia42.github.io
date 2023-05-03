@@ -9,6 +9,19 @@
   font-size: 90pt;
 }
 
+#video {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 320px !important;
+  aspect-ratio: 9 / 16 !important;
+  /* margin-left: 35%; */
+}
+
+#RATSGH svg {
+  margin-left: 0;
+}
+
 #headshot {
   width: 90%;
   height: 90%;
