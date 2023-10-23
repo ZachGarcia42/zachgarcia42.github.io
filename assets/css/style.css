@@ -260,6 +260,7 @@ div.section p.org {
 }
 
 #schoolinfo,
+#spacex,
 #google,
 #tesla,
 #alpha,
@@ -277,6 +278,7 @@ div.section p.org {
   font-size: 2vw;
 } */
 
+#spacex_date,
 #goog_date,
 #tesla_date {
   grid-column-start: 2;
